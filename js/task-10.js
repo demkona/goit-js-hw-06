@@ -21,7 +21,7 @@ function onCreateBoxes(amount) {
 
   for (let i = 0; i < amount; i += 1) {
     const colorBoxes = getRandomHexColor();
-    newBoxes += `<div style = "height: ${sizeBoxes + 10 * i}px; width:${sizeBoxes + 100 * i}px; background-color:${colorBoxes};"></div>`
+    newBoxes += `<div style = "height: ${sizeBoxes + 10 * i}px; width:${sizeBoxes + 10 * i}px; background-color:${colorBoxes};"></div>`
   }
   refs.boxes.insertAdjacentHTML("afterbegin", newBoxes)
 }
